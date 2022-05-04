@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.responsive{
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+    width: 100%;
+    background-color: #84CC16;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul li{
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border: solid 1px #84CC16;
+    background-color: #BEF264;
 }
-
-.App-link {
-  color: #61dafb;
+.home-page,.aboutUs-page,.profile,.blogs-page,.blog-page,.notFound-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+aside{
+    margin: 1rem;
+    width: 100%;
+    background:#A3E635;
+    border-radius: 5px;
+}
+.sideBar{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.sideBar li{
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border: solid 1px #84CC16;
+background-color: #D9F99D;
+}
+.blogs-page{
+    align-items: flex-start;
+}
+.blogs-page li{
+    margin: 1rem;
+}
+.text-404{
+    font-size: 15vw;
+    text-transform: uppercase;
+	background: linear-gradient(to right, #7F1D1D 0%, #FCA5A5 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+footer{
+    width: 100%;
+    background-color: #84CC16;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+}
+.activeLink{
+color: #65A30D;
 }
